@@ -79,14 +79,3 @@ The full codebase is currently **private**, as the project is in active developm
 Access or technical demonstrations can be provided on a case-by-case basis.
 
 ---
-
-Would you like me to generate placeholder screenshots or icons for the `/demo/` folder, or prepare a PDF version of this README?
-
-
-
-
-
-
-
-
-Demander à ChatGPT
