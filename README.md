@@ -2,7 +2,7 @@
 
 This project aims to build an intelligent tax assistant for **fiduciaries in the canton of Vaud**, automating tax declaration processing for individuals using advanced document understanding and AI technologies.
 
-> ⚠️ This repository does **not contain the source code**. It serves as a **functional and business showcase**. A live demo can be provided upon request.
+> ⚠️ This repository does **not contain the source code**. It serves as a **functional and business showcase**.
 
 ---
 
@@ -36,14 +36,13 @@ This project aims to build an intelligent tax assistant for **fiduciaries in the
 ---
 
 ## 🔗 Demo Preview
+Live demo available at: app-taxai-frontend-ch.azurewebsites.net
 
-🎥 Demo video: [Insert YouTube or Loom link here]
+To try the demo, simply upload the two files located in docs/john_doe, then click on the "Commencer l'analyse" button.
 
-📸 Screenshots:
+An intermediate data confirmation step will appear for demonstration purposes—simply click "Confirmer les données" to proceed, and the final tax declaration will then be displayed.
 
-| Document Upload | Extracted Results | Deduction Preview |
-|------------------|-------------------|--------------------|
-| ![](demo/screenshot_1.png) | ![](demo/screenshot_2.png) | ![](demo/screenshot_3.png) |
+Please note: the "Exporter la déclaration" button is not yet implemented and is currently shown for demonstration purposes only.
 
 ---
 
@@ -59,8 +58,7 @@ This project is developed in collaboration with the independent tax advisory fir
 - `Azure Foundry` – secure LLM hosting
 - `Google Maps APIs` – Geocoding & Distance Matrix
 - `FastAPI` – Python backend (private)
-- `Vue.js` – Frontend UI (private)
-- `PostgreSQL` – Secure data storage
+- `React` – Frontend UI (private)
 
 ---
 
@@ -68,14 +66,13 @@ This project is developed in collaboration with the independent tax advisory fir
 
 📬 Interested in a demo or partnership?
 
-- ✉️ Email: [your.email@domain.ch]  
-- 💼 LinkedIn: [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
+- ✉️ Email: [hippolyte.angel@outlook.com]  
+- 💼 LinkedIn: [linkedin.com/in/angel-hippolyte](https://linkedin.com/in/angel-hippolyte)
 
 ---
 
 ## 🔒 About the Source Code
 
-The full codebase is currently **private**, as the project is in active development and commercial validation.  
-Access or technical demonstrations can be provided on a case-by-case basis.
+The full codebase is proprietary and not available in this repository.
 
 ---
