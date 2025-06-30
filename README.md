@@ -1,4 +1,4 @@
-# 🧾 Smart Tax Assistant – Automated Tax Declaration for Fiduciaries (Vaud, Switzerland)
+# 🧾 Tax Declaration Assistant for Fiduciaries (Vaud, Switzerland)
 
 This project aims to build an intelligent tax assistant for **fiduciaries in the canton of Vaud**, automating tax declaration processing for individuals using advanced document understanding and AI technologies.
 
