@@ -36,7 +36,7 @@ This project aims to build an intelligent tax assistant for **fiduciaries in the
 ---
 
 ## 🔗 Demo Preview
-Live demo available [Here](https://app-taxai-frontend-ch.azurewebsites.net)
+Live demo available [here](https://app-taxai-frontend-ch.azurewebsites.net)
 
 To try the demo, simply upload the two files located in docs/john_doe, then click on the "Commencer l'analyse" button.
 
