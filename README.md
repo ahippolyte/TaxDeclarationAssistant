@@ -10,7 +10,7 @@ This project aims to build an intelligent tax assistant for **fiduciaries in the
 
 - Dramatically reduce the time required to process tax files for fiduciaries.
 - Automatically extract key data from standardized supporting documents.
-- Generate `.tax` files compatible with the official [VaudTax](https://www.vd.ch/themes/etat-droit-finances/impots/vaudtax/) platform.
+- Generate `.tax` files compatible with the official [VaudTax](https://www.vd.ch/etat-droit-finances/impots/impots-pour-les-individus/remplir-ma-declaration-dimpot/vaudtax) platform.
 - Assist with deduction suggestions (transportation, pension, dependents, etc.).
 
 ---
@@ -18,7 +18,7 @@ This project aims to build an intelligent tax assistant for **fiduciaries in the
 ## 🧠 Key Features
 
 - 📄 **Intelligent document extraction**  
-  Leveraging [Azure Document Intelligence](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/) to process:
+  Leveraging Azure Document Intelligence to process:
   - salary certificates,
   - bank certificates and statements,
   - transmission forms,
