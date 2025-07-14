@@ -1,17 +1,17 @@
-# 🧾 Tax Declaration Assistant (Vaud, Switzerland)
+# Tax Declaration Assistant (Vaud, Switzerland)
 
 This project aims to build an intelligent tax assistant for **tax professionals in the canton of Vaud**, automating the processing of individual tax declarations using advanced document understanding and AI technologies.
 
 ---
 
-## 🚀 Project Goals
+## Project Goals
 
 - Dramatically reduce the time and manual effort tax professionals spend preparing individual tax declarations.
 - Improve accuracy and consistency of reported tax data.
   
 ---
 
-## 🧠 Key Features
+## Key Features
 
 - **Automated data extraction** from standardized tax documents (salary certificates, bank statements, transmission forms, etc.).
 - **Commute distance calculation** between home and workplace for transportation deduction purposes (via Google Maps APIs).
@@ -19,7 +19,41 @@ This project aims to build an intelligent tax assistant for **tax professionals 
 - **.vaudtax file export**, fully compatible with [VaudTax](https://www.vd.ch/etat-droit-finances/impots/impots-pour-les-individus/remplir-ma-declaration-dimpot/vaudtax) for official submission to the cantonal tax administration (subject to approval).
 - **Deduction type recommendation**: lump-sum (forfaitary) vs. actual expenses.
 
-# Technologies
+---
+
+## Demo Preview
+
+[Access the live demo here](https://app-taxai-frontend-ch.azurewebsites.net)
+
+To try the demo:
+1. Upload the 6 sample files from `docs/john_doe`.
+2. Click **"Commencer l’analyse"**.
+3. Review and confirm data in the intermediate step.
+4. View the generated tax declaration.
+
+> Note: The **"Exporter la déclaration"** button is shown for demo purposes only and is not yet implemented.
+
+---
+
+### Use Case: Complete Tax Declaration (Demo)
+
+The demo showcases a **realistic tax declaration scenario** for an individual taxpayer residing in the canton of Vaud.  
+It is based on **six anonymized real-world documents**, which together provide all the information typically required to justify a taxpayer’s fiscal situation in Switzerland.
+
+### Documents used in the demo:
+1. **Salary certificate** – Contains yearly gross/net income, employer details, AVS number, social deductions, and any bonuses or allowances.
+2. **3rd Pillar certificate (Swiss Life)** – Certifies contributions to a private pension (pillar 3a), deductible from taxable income.
+3. **Bank statement – Personal account** – Shows the closing balance and interest payments, relevant for wealth declaration.
+4. **Bank statement – Savings account** – Provides savings balance and accrued interest, also part of income and wealth declaration.
+5. **Health insurance certificate (Assura)** – Lists mandatory (LAMal) and supplementary (LCA) premiums, which may be tax-deductible.
+6. **Transmission form** – An administrative cover sheet used during submission to the tax office.
+
+All documents are **authentic in structure** but have been **fully anonymized** to respect confidentiality.  
+They reflect the kind of paperwork commonly handled by fiduciaries during the annual tax season.
+
+---
+
+## Tech Stack
 
 <p align="left">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/2048px-Microsoft_Azure.svg.png" alt="Azure" width="40"/>&nbsp;&nbsp;&nbsp;
@@ -29,40 +63,17 @@ This project aims to build an intelligent tax assistant for **tax professionals 
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Google_Maps_icon_%282020%29.svg/1428px-Google_Maps_icon_%282020%29.svg.png" alt="Google Maps" width="25"/>
 </p>
 
-- **Azure**
-  - **Azure Document Intelligence** – AI-powered OCR to process unstructured tax documents
-  - **Azure OpenAI / Foundry** – Secure LLM hosting to extract relevant tax fields from documents
-- **FastAPI** – Python backend
-- **Pydantic** – Data validation and serialization for structured tax models.
-- **React** – Frontend UI
-- **Google Maps APIs** – Geocoding & Distance Matrix for commute analysis.
+- `Azure Document Intelligence` – AI-powered OCR to process unstructured tax documents
+- `Azure OpenAI / Foundry` – Secure LLM hosting to extract relevant tax fields from documents
+- `Google Maps APIs` – Geocoding & Distance Matrix for commute analysis.
+- `Pydantic` - Data validation and serialization for structured tax models.
+- `FastAPI` – Python backend (private)
+- `React` – Frontend UI (private)
 
 ---
-
-## Demo Preview
-Live demo available [here](https://app-taxai-frontend-ch.azurewebsites.net)
-
-To try the demo, upload the 6 sample files from docs/john_doe, then click the "Commencer l’analyse" button.
-
-An intermediate data confirmation step will appear for demonstration purposes, simply click "Confirmer les données" to proceed, and the final tax declaration will then be displayed.
-
-Please note: the "Exporter la déclaration" button is not yet implemented and is currently shown for demonstration purposes only.
-
----
-
 ## Business Collaboration
 
 This project is developed in collaboration with the independent tax advisory firm [**elysio.ch**](https://elysio.ch/), ensuring practical alignment with fiduciary needs and fiscal compliance within the canton of Vaud.
-
----
-
-## Tech Stack
-
-- `Azure Document Intelligence` – AI-powered OCR for structured tax documents
-- `Azure Foundry` – secure LLM hosting
-- `Google Maps APIs` – Geocoding & Distance Matrix
-- `FastAPI` – Python backend (private)
-- `React` – Frontend UI (private)
 
 ---
 
