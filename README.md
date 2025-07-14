@@ -1,4 +1,4 @@
-# 🧾 Assistant de Déclaration Fiscale pour le Canton de Vaud
+# Assistant de Déclaration Fiscale pour le Canton de Vaud
 
 > 🇬🇧 [English version here / Version anglaise](README.en.md)
 
