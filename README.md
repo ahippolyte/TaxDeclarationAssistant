@@ -2,14 +2,14 @@
 
 This project aims to build an intelligent tax assistant for **tax professionals in the canton of Vaud**, automating the processing of individual tax declarations using advanced document understanding and AI technologies.
 
-## 📚 Summary
+## Summary
 
 - [Project Goals](#project-goals)
 - [Key Features](#key-features)
 - [Live Demo](#live-demo)
   - [Use Case: Realistic Tax Declaration](#use-case-realistic-tax-declaration)
   - [Documents Used](#documents-used-in-the-demo)
-- [🛠Tech Stack](#tech-stack)
+- [Tech Stack](#tech-stack)
 - [Business Collaboration](#business-collaboration)
 - [Learn More / Get in Touch](#learn-more--get-in-touch)
 - [About the Source Code](#about-the-source-code)
