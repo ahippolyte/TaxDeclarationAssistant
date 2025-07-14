@@ -11,12 +11,10 @@ Ce projet vise à créer un assistant fiscal intelligent pour les **professionne
 - [Objectifs du projet](#objectifs-du-projet)
 - [Fonctionnalités clés](#fonctionnalités-clés)
 - [Démonstration en ligne](#démonstration-en-ligne)
-  - [Cas d’usage : Déclaration fiscale réaliste](#cas-dusage-déclaration-fiscale-réaliste)
-  - [Documents utilisés](#documents-utilisés-dans-la-démo)
 - [Technologies](#technologies)
 - [Collaboration professionnelle](#collaboration-professionnelle)
 - [Contact](#contact)
-- [À propos du code source](#à-propos-du-code-source)
+- [A propos du code source](#a-propos-du-code-source)
 
 ---
 
@@ -111,12 +109,12 @@ Cela garantit un alignement fort avec les **besoins des fiduciaires**, la **rég
 
 Vous souhaitez collaborer ou en savoir plus ?
 
-- Email : [hippolyte.angel@outlook.com]  
+- Email : hippolyte.angel@outlook.com
 - LinkedIn : [linkedin.com/in/angel-hippolyte](https://linkedin.com/in/angel-hippolyte)
 
 ---
 
-## 🔒 À propos du code source
+## 🔒 A propos du code source
 
 Ce dépôt sert uniquement de **vitrine fonctionnelle et métier**.  
 L’intégralité du code reste propriétaire et n’est pas publiée.
