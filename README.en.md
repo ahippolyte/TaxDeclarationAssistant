@@ -1,117 +1,93 @@
 # Tax Declaration Assistant for the Canton of Vaud
 
+> [Version en français / French version here](README.md)
+
 This project aims to build an intelligent tax assistant for **tax professionals in the canton of Vaud**, automating the processing of individual tax declarations using advanced document understanding and AI technologies.
-
-## Summary
-
-- [Project Goals](#project-goals)
-- [Key Features](#key-features)
-- [Live Demo](#live-demo)
-  - [Use Case: Realistic Tax Declaration](#use-case-realistic-tax-declaration)
-  - [Documents Used](#documents-used-in-the-demo)
-- [Tech Stack](#tech-stack)
-- [Business Collaboration](#business-collaboration)
-- [Learn More / Get in Touch](#learn-more--get-in-touch)
-- [About the Source Code](#about-the-source-code)
-
----
-
-## Project Goals
-
-- Dramatically reduce the time and manual effort tax professionals spend preparing individual tax declarations.
-- Improve accuracy and consistency of reported tax data.
-  
----
-
-## Key Features
-
-- **Automated data extraction** from standardized tax documents (salary certificates, bank statements, transmission forms, etc.).
-- **Commute distance calculation** between home and workplace for transportation deduction purposes (via Google Maps APIs).
-- **Automated currency conversion** for foreign bank accounts.
-- **.vaudtax file export**, fully compatible with [VaudTax](https://www.vd.ch/etat-droit-finances/impots/impots-pour-les-individus/remplir-ma-declaration-dimpot/vaudtax) for official submission to the cantonal tax administration (subject to approval).
-- **Deduction type recommendation**: lump-sum (forfaitary) vs. actual expenses.
-
----
 
 ## Live Demo
 
-[Access the live demo here](https://app-taxai-frontend-ch.azurewebsites.net)
+👉 [Access the live demo here](https://app-taxai-frontend-ch.azurewebsites.net)
 
-To try the demo, follow these steps:
+### How to try the demo?
 
-1. **Upload the 6 sample files**  
-   → Located in the repository folder: `docs/john_doe`
+Go to the address provided above and follow the instructions.
 
-2. **Click “Commencer l’analyse”**  
-   → This will launch the automated tax processing workflow.
+### Use case: Realistic Tax Declaration
 
-3. **Confirm the workplace address and mode of transportation**  
-   - The default **workplace address** is extracted from the salary certificate but can be adjusted to reflect the actual commuting situation.  
-   - You must also **select a means of transportation** (e.g. public transit, personal car), as this information is not provided in any of the documents.
+The demo reproduces a **real-life scenario** for a taxpayer in the canton of Vaud, based on **six anonymized documents that remain authentic in structure**: everything needed to justify a typical tax situation in Switzerland. During the first step of the demo, you are invited to download these sample documents.
 
-   > 💡 These details are used to **calculate the commuting distance** and estimate **deductible transportation expenses**.
+### Documents used in the demo
 
-4. **Review the generated tax declaration**  
-   → Once the analysis is complete, the declaration is displayed in a **structured format** designed to closely resemble the official **VaudTax** interface, ensuring clarity and ease of use for tax professionals.
+| Document type                       | Extracted information                                             |
+|-------------------------------------|-------------------------------------------------------------------|
+| **Transmission form**                 | Administrative metadata for submission to the tax authorities     |
+| **Salary certificate**              | Gross/net income, social deductions, bonus |
+| **Bank statement tax certificate – Personal Account** | Account balance, interests (income and wealth)                   |
+| **Bank statement tax certificate – Savings Account**  | Savings balance, interests                                        |
+| **Health insurance (LAMal and LCA) tax certificate** | LAMal/LCA premiums (partially deductible)                         |
+| **Pillar 3a contribution certificate**               | Pillar 3a contributions (deductible)                             |
 
-> Note: The **"Exporter la déclaration"** button is shown for demo purposes only and is not yet implemented.
-
-### Use Case: Realistic Tax Declaration
-
-The demo showcases a **realistic tax declaration scenario** for an individual taxpayer residing in the canton of Vaud.  
-It is based on **six anonymized real-world documents**, which together provide all the information typically required to justify a taxpayer’s fiscal situation in Switzerland.
-
-### Documents used in the demo:
-1. **Salary certificate** – Contains yearly gross/net income, employer details, AVS number, social deductions, and any bonuses or allowances.
-2. **3rd Pillar certificate (Swiss Life)** – Certifies contributions to a private pension (pillar 3a), deductible from taxable income.
-3. **Bank statement – Personal account** – Shows the closing balance and interest payments, relevant for wealth declaration.
-4. **Bank statement – Savings account** – Provides savings balance and accrued interest, also part of income and wealth declaration.
-5. **Health insurance certificate (Assura)** – Lists mandatory (LAMal) and supplementary (LCA) premiums, which may be tax-deductible.
-6. **Transmission form** – An administrative cover sheet used during submission to the tax office.
-
-All documents are **authentic in structure** but have been **fully anonymized** to respect confidentiality.  
-They reflect the kind of paperwork commonly handled by fiduciaries during the annual tax season.
-
-Once the workflow is complete, the resulting tax declaration is displayed in a structured format that closely mirrors the organization found in **VaudTax**, ensuring familiarity and usability for professionals accustomed to the official platform.
+> All documents are fully anonymized while preserving their real structure.
 
 ---
 
-## Tech Stack
+## Project goals
 
-<p align="left">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/2048px-Microsoft_Azure.svg.png" alt="Azure" width="40"/>&nbsp;&nbsp;&nbsp;
-  <img src="https://pydantic.dev/favicon/apple-touch-icon.png" alt="Pydantic" width="40"/>&nbsp;&nbsp;&nbsp;
-  <img src="https://www.cdnlogo.com/logos/f/49/fastapi.svg" alt="FastAPI" width="40"/>&nbsp;&nbsp;&nbsp;
-  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" width="40"/>&nbsp;&nbsp;&nbsp;
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Google_Maps_icon_%282020%29.svg/1428px-Google_Maps_icon_%282020%29.svg.png" alt="Google Maps" width="25"/>
+- Drastically reduce the time and manual effort required for preparing individual tax returns.  
+- Improve the accuracy and consistency of transmitted tax data.
+
+---
+
+## Key features
+
+- **Automatic data extraction** from non-standardized tax documents.  
+- **Automated home-to-work distance calculation** for transport cost deductions (via Google Maps API).  
+- **Automatic currency conversion** for foreign bank accounts.  
+- **Deduction type suggestion**: actual expenses vs. lump-sum.  
+- **Export to `.vaudtax` format**, for seamless integration with the cantonal software [VaudTax](https://www.vd.ch/etat-droit-finances/impots/impots-pour-les-individus/remplir-ma-declaration-dimpot/vaudtax) (feature subject to certification by the canton of Vaud).
+
+---
+
+## Technologies
+
+<p style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/2048px-Microsoft_Azure.svg.png" alt="Azure" width="40"/>&nbsp;&nbsp;&nbsp;
+   <img src="https://pydantic.dev/favicon/apple-touch-icon.png" alt="Pydantic" width="40"/>&nbsp;&nbsp;&nbsp;
+   <img src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/langgraph-color.png" alt="LangGraph" width="50"/>&nbsp;&nbsp;&nbsp;
+   <img src="https://www.cdnlogo.com/logos/f/49/fastapi.svg" alt="FastAPI" width="40"/>&nbsp;&nbsp;&nbsp;
+   <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" width="40"/>&nbsp;&nbsp;&nbsp;
+   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Google_Maps_icon_%282020%29.svg/1428px-Google_Maps_icon_%282020%29.svg.png" alt="Google Maps" width="25"/>
 </p>
 
-- `Azure Document Intelligence` – AI-powered OCR to process unstructured tax documents
-- `Azure OpenAI / Foundry` – Secure LLM hosting to extract relevant tax fields from documents
-- `Pydantic` - Data validation and serialization for structured tax models.
-- `FastAPI` – Python backend (private)
-- `React` – Frontend UI (private)
-- `Google Maps APIs` – Geocoding & Distance Matrix for commute analysis.
-
----
-## Business Collaboration
-
-This project is developed in collaboration with the independent tax advisory firm [**elysio.ch**](https://elysio.ch/), ensuring practical alignment with fiduciary needs and fiscal compliance within the canton of Vaud.
+- `Azure Document Intelligence` – Advanced OCR and structured field extraction  
+- `Azure OpenAI / Foundry` – Intelligent extraction and interpretation of tax data  
+- `Pydantic` – Data validation and modeling  
+- `LangGraph` – Orchestration for structured processing of tax analysis steps  
+- `FastAPI` – High-performance Python backend  
+- `React` – User web interface  
+- `Google Maps API` – Geolocation and home-to-work route calculation  
 
 ---
 
-## Learn More / Get in Touch
+## Professional collaboration
 
-Interested in partnership?
-
-- Email: [hippolyte.angel@outlook.com]  
-- LinkedIn: [linkedin.com/in/angel-hippolyte](https://linkedin.com/in/angel-hippolyte)
+This project is developed in partnership with [**elysio.ch**](https://elysio.ch/), an independent tax advisory firm in French-speaking Switzerland.  
+This ensures strong alignment with real-world business needs and practices.
 
 ---
 
-## 🔒 About the Source Code
+## Contact
 
-The full codebase is proprietary and not available in this repository.
-This repository just serves as a **functional and business showcase**.
+Want to collaborate or learn more?
+
+- Email: hippolyte.angel@outlook.com  
+- LinkedIn: [linkedin.com/in/angel-hippolyte](https://linkedin.com/in/angel-hippolyte)  
+
+---
+
+## 🔒 About the source code
+
+This repository serves only as a **functional and business showcase**.  
+The full code remains proprietary and is not published.
 
 ---
