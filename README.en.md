@@ -6,7 +6,7 @@ This project aims to build an intelligent tax assistant for **tax professionals 
 
 ## Live Demo
 
-👉 [Access the live demo here](http://83.228.210.213:3000)
+👉 [Access the live demo here](http://84.234.28.222:3002)
 
 ### How to try the demo?
 
