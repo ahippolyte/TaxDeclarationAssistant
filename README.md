@@ -8,7 +8,7 @@ Ce projet vise à créer un assistant fiscal intelligent pour le canton de Vaud,
 
 ## Démonstration en ligne
 
-👉 [**Accéder à la démo en ligne**](http://83.228.210.213:3000)
+👉 [**Accéder à la démo en ligne**](http://84.234.28.222:3002)
 
 ### Comment essayer la démo ?
 
